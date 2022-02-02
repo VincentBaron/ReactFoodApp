@@ -21,22 +21,11 @@ This project showed me how to use develop in React and learn all the fundamental
 11. Class based components.
 12. Sending Http requests & handling transitional states + responses.
 13. Handling forms and user input (incl. validation).
-14. Redux & Redux Toolkit
-
-15. Routing with React Router
-
-16. An in-depth introduction into Next.js
-
-17. Deploying React Apps
-
-18. Implementing Authentication
-
-19. Unit Tests
-
-20. Combining React with TypeScript
-
-21. Adding Animations
-
-Tons of examples and demo projects so that you can apply all the things you learned in real projects
-
-And so much more - check out the full curriculum on this page!
+14. Redux & Redux Toolkit.
+15. Routing with React Router.
+16. An in-depth introduction into Next.js.
+17. Deploying React Apps.
+18. Implementing Authentication.
+19. Unit Tests.
+20. Combining React with TypeScript.
+21. Adding Animations.
