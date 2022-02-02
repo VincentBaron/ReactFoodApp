@@ -3,7 +3,7 @@
 ## Project Overview
 
 This is a Front-end project done in React. It is my first project using this framework.
-You can find the web app at [ReactFoodApp](https://vincentbaron.github.io/ReactFoodApp/public/index.html).
+You can find the web app at [ReactFoodApp](https://vincentbaron.github.io/ReactFoodApp/).
 
 This project showed me how to use develop in React and learn all the fundamental concepts of React. It is still ungoing as I am looking at implementing HTTP requests, deploying it, adding a back-end, etc.
 
