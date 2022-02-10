@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import classes from "./AvailableMeals.module.css";
 import MealItem from "./MealItem/MealItem";
 import Card from "../UI/Card";
@@ -30,6 +31,24 @@ const DUMMY_MEALS = [
 ];
 
 function AvaialbleMeals() {
+	const [meals, setMeals] = useState([]);
+	const {isLoading, error, sendRequest: fetchMeals} = useHttp();
+
+	useEffect(() => {
+		const transformMeals = (mealsObj) => {
+			const loadedMeals = [];
+
+			for (const mealsKey in mealsObj) {
+				loadedMeals.push({id: mealsKey, name: mealsObj[mealsKey].name, description: mealsObj[mealsKey].description, price: mealsObj[mealsKey].price})
+			}
+
+			setMeals(loadedMeals);
+		};
+		fetchMeals({
+			url: "https://react-http-25a0f-default-rtdb.firebaseio.com/meals.json"
+		})
+	})
+
   return (
     <section className={classes.meals}>
       <Card>
